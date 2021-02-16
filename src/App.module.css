@@ -45,6 +45,7 @@
     margin-right: 10px;
   }
 }
+
 .langButton::before {
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +78,7 @@
 }
 
 .form {
-  width: 350px;
+  width: 375px;
   margin: 0 auto;
   border-radius: 16px;
   background: white;
@@ -108,7 +109,7 @@
   list-style: none;
   font-family: "JetBrains Mono", monospace;
   font-size: 20px;
-  width: 400px;
+  width: 375px;
   margin: 0px auto 10px;
 }
 
