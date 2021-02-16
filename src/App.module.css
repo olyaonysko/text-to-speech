@@ -1,25 +1,50 @@
 .buttonWrapper {
-  text-align: center;
+  width: 300px;
+  margin: 0 auto;
   margin-bottom: 40px;
-  font-family: "Gugi", cursive;
+  font-family: "JetBrains Mono", monospace;
   font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .langButton {
+  width: 245px;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   background: #b779ff;
-  padding: 20px;
+  padding: 20px 20px 20px 45px;
   border-radius: 5px;
   display: inline-block;
   border: none;
   cursor: pointer;
   transition: all 0.4s ease 0s;
   position: relative;
-  padding-left: 45px;
 }
 
+@media (max-width: 768px) {
+  .langButton:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .buttonWrapper {
+    width: 600px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .langButton {
+    height: 70px;
+  }
+
+  .langButton:not(:last-child) {
+    margin-right: 10px;
+  }
+}
 .langButton::before {
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,18 +76,13 @@
   transition: all 0.4s ease 0s;
 }
 
-.langButton:not(:last-child) {
-  margin-right: 10px;
-}
-
 .form {
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   border-radius: 16px;
   background: white;
   overflow: hidden;
   box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.47);
-  /* z-index: 100; */
 }
 
 .formTitle {
@@ -70,7 +90,7 @@
   width: 100%;
   font-size: 30px;
   font-weight: 100;
-  font-family: "Gugi", cursive;
+  font-family: "JetBrains Mono", monospace;
   padding: 8px;
   background: #c592ff;
   border-radius: 5px;
@@ -86,7 +106,7 @@
 .formSettingList {
   padding: 0 32px;
   list-style: none;
-  font-family: "Gugi", cursive;
+  font-family: "JetBrains Mono", monospace;
   font-size: 20px;
   width: 400px;
   margin: 0px auto 10px;
@@ -127,7 +147,7 @@ label {
 
 .textareaWrapper {
   padding: 0 32px;
-  font-family: "Gugi", cursive;
+  font-family: "JetBrains Mono", monospace;
   font-size: 20px;
   padding-bottom: 10px;
 }
@@ -156,7 +176,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 3.2px;
   width: 100%;
-  font-family: "Gugi", cursive;
+  font-family: "JetBrains Mono", monospace;
   margin-bottom: 0;
   font-size: 32px;
   transition: all 0.3s;
