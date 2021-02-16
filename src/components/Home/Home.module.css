@@ -1,0 +1,23 @@
+.wrapper {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Gugi", cursive;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.active {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,28 @@
+.link {
+  font-family: "Gugi", cursive;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 500;
+  color: #7bc9eb;
+  font-size: 15px;
+}
+
+.activeLink {
+  composes: link;
+  color: #464646;
+  border: 5px solid #ba84f9;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .link {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .link {
+    font-size: 35px;
+  }
+}

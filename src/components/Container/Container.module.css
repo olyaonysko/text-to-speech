@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 767px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
