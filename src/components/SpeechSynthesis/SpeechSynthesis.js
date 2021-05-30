@@ -13,7 +13,6 @@ const SpeechSynthesis = () => {
   const [voiceIndex, setVoiceIndex] = useState(null);
 
   const onEnd = () => {
-    // You could do something here after speaking has finished
   };
   const { speak, cancel, speaking, supported, voices } = useSpeechSynthesis({
     onEnd,
