@@ -30,7 +30,6 @@ const SpeechRecognition = () => {
   const [blocked, setBlocked] = useState(false);
 
   const onEnd = () => {
-    // You could do something here after listening has finished
   };
 
   const onResult = (result) => {
