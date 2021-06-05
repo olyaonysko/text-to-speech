@@ -12,8 +12,7 @@ const SpeechSynthesis = () => {
   const [rate, setRate] = useState(1);
   const [voiceIndex, setVoiceIndex] = useState(null);
 
-  const onEnd = () => {
-  };
+  const onEnd = () => {};
   const { speak, cancel, speaking, supported, voices } = useSpeechSynthesis({
     onEnd,
   });
@@ -39,9 +38,7 @@ const SpeechSynthesis = () => {
                   setVoiceIndex(event.target.value);
                 }}
               >
-                <option value="" disabled>
-                  Default
-                </option>
+                <option value="">Default</option>
                 {voices.map((option, index) => (
                   <option key={option.voiceURI} value={index}>
                     {`${option.lang} - ${option.name}`}
@@ -55,10 +52,10 @@ const SpeechSynthesis = () => {
                 <div className={s.rateValue}>{rate}</div>
                 <input
                   type="range"
-                  min="0.1"
-                  max="10"
-                  defaultValue="5"
-                  step="1"
+                  max="2"
+                  min="0.5"
+                  defaultValue="1"
+                  step="0.1"
                   id="rate"
                   onChange={(event) => {
                     setRate(event.target.value);
@@ -72,8 +69,8 @@ const SpeechSynthesis = () => {
                 <div className={s.pitchValue}>{pitch}</div>
                 <input
                   type="range"
-                  min="0.1"
                   max="2"
+                  min="0.1"
                   defaultValue="1"
                   step="0.1"
                   id="pitch"
